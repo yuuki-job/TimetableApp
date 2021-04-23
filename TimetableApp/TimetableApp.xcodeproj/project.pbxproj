@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		522E383B2632C6E400D74243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522E383A2632C6E400D74243 /* AppDelegate.swift */; };
 		522E383D2632C6E400D74243 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522E383C2632C6E400D74243 /* SceneDelegate.swift */; };
-		522E383F2632C6E400D74243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522E383E2632C6E400D74243 /* ViewController.swift */; };
+		522E383F2632C6E400D74243 /* DisplayTimetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522E383E2632C6E400D74243 /* DisplayTimetable.swift */; };
 		522E38422632C6E400D74243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522E38402632C6E400D74243 /* Main.storyboard */; };
 		522E38442632C6E800D74243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522E38432632C6E800D74243 /* Assets.xcassets */; };
 		522E38472632C6E800D74243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522E38452632C6E800D74243 /* LaunchScreen.storyboard */; };
+		52442AA02633071600FE0768 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442A9E2633071600FE0768 /* CollectionViewCell.swift */; };
+		52442AA12633071600FE0768 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52442A9F2633071600FE0768 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		522E38372632C6E400D74243 /* TimetableApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimetableApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		522E383A2632C6E400D74243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		522E383C2632C6E400D74243 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		522E383E2632C6E400D74243 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		522E383E2632C6E400D74243 /* DisplayTimetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTimetable.swift; sourceTree = "<group>"; };
 		522E38412632C6E400D74243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		522E38432632C6E800D74243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522E38462632C6E800D74243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522E38482632C6E800D74243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52442A9E2633071600FE0768 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		52442A9F2633071600FE0768 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				522E383A2632C6E400D74243 /* AppDelegate.swift */,
 				522E383C2632C6E400D74243 /* SceneDelegate.swift */,
-				522E383E2632C6E400D74243 /* ViewController.swift */,
+				522E383E2632C6E400D74243 /* DisplayTimetable.swift */,
 				522E38402632C6E400D74243 /* Main.storyboard */,
 				522E38432632C6E800D74243 /* Assets.xcassets */,
 				522E38452632C6E800D74243 /* LaunchScreen.storyboard */,
 				522E38482632C6E800D74243 /* Info.plist */,
+				52442A9E2633071600FE0768 /* CollectionViewCell.swift */,
+				52442A9F2633071600FE0768 /* CollectionViewCell.xib */,
 			);
 			path = TimetableApp;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			files = (
 				522E38472632C6E800D74243 /* LaunchScreen.storyboard in Resources */,
 				522E38442632C6E800D74243 /* Assets.xcassets in Resources */,
+				52442AA12633071600FE0768 /* CollectionViewCell.xib in Resources */,
 				522E38422632C6E400D74243 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522E383F2632C6E400D74243 /* ViewController.swift in Sources */,
+				522E383F2632C6E400D74243 /* DisplayTimetable.swift in Sources */,
 				522E383B2632C6E400D74243 /* AppDelegate.swift in Sources */,
+				52442AA02633071600FE0768 /* CollectionViewCell.swift in Sources */,
 				522E383D2632C6E400D74243 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
