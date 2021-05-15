@@ -13,8 +13,15 @@
 		522E38422632C6E400D74243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522E38402632C6E400D74243 /* Main.storyboard */; };
 		522E38442632C6E800D74243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522E38432632C6E800D74243 /* Assets.xcassets */; };
 		522E38472632C6E800D74243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522E38452632C6E800D74243 /* LaunchScreen.storyboard */; };
-		52442AA02633071600FE0768 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442A9E2633071600FE0768 /* CollectionViewCell.swift */; };
+		52442AA02633071600FE0768 /* TimetableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442A9E2633071600FE0768 /* TimetableCollectionViewCell.swift */; };
 		52442AA12633071600FE0768 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52442A9F2633071600FE0768 /* CollectionViewCell.xib */; };
+		52442AA42633E07900FE0768 /* SaveClassNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442AA32633E07900FE0768 /* SaveClassNameViewController.swift */; };
+		52442AC42639473900FE0768 /* TextField + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442AC32639473900FE0768 /* TextField + Extension.swift */; };
+		52442ACC263D4A2500FE0768 /* SaveDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442ACB263D4A2500FE0768 /* SaveDatas.swift */; };
+		52442AD22642478900FE0768 /* DatasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442AD12642478900FE0768 /* DatasManager.swift */; };
+		52442AD726457B3A00FE0768 /* ChoiceColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442AD626457B3900FE0768 /* ChoiceColorViewController.swift */; };
+		52442ADC264F490600FE0768 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442ADA264F490600FE0768 /* ColorCollectionViewCell.swift */; };
+		52442ADD264F490600FE0768 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52442ADB264F490600FE0768 /* ColorCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +33,15 @@
 		522E38432632C6E800D74243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522E38462632C6E800D74243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522E38482632C6E800D74243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52442A9E2633071600FE0768 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		52442A9E2633071600FE0768 /* TimetableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableCollectionViewCell.swift; sourceTree = "<group>"; };
 		52442A9F2633071600FE0768 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		52442AA32633E07900FE0768 /* SaveClassNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveClassNameViewController.swift; sourceTree = "<group>"; };
+		52442AC32639473900FE0768 /* TextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField + Extension.swift"; sourceTree = "<group>"; };
+		52442ACB263D4A2500FE0768 /* SaveDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDatas.swift; sourceTree = "<group>"; };
+		52442AD12642478900FE0768 /* DatasManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasManager.swift; sourceTree = "<group>"; };
+		52442AD626457B3900FE0768 /* ChoiceColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceColorViewController.swift; sourceTree = "<group>"; };
+		52442ADA264F490600FE0768 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		52442ADB264F490600FE0768 /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +74,64 @@
 		522E38392632C6E400D74243 /* TimetableApp */ = {
 			isa = PBXGroup;
 			children = (
+				52442AC7263A9E5200FE0768 /* Model */,
+				52442AD02642470600FE0768 /* Manager */,
+				52442AC8263A9E6100FE0768 /* View */,
+				52442AC9263A9E7800FE0768 /* Controllers */,
+				52A4B771264FA6C7009E1280 /* Extensions */,
+				52442AC32639473900FE0768 /* TextField + Extension.swift */,
 				522E383A2632C6E400D74243 /* AppDelegate.swift */,
 				522E383C2632C6E400D74243 /* SceneDelegate.swift */,
-				522E383E2632C6E400D74243 /* DisplayTimetable.swift */,
 				522E38402632C6E400D74243 /* Main.storyboard */,
 				522E38432632C6E800D74243 /* Assets.xcassets */,
 				522E38452632C6E800D74243 /* LaunchScreen.storyboard */,
 				522E38482632C6E800D74243 /* Info.plist */,
-				52442A9E2633071600FE0768 /* CollectionViewCell.swift */,
-				52442A9F2633071600FE0768 /* CollectionViewCell.xib */,
 			);
 			path = TimetableApp;
+			sourceTree = "<group>";
+		};
+		52442AC7263A9E5200FE0768 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52442ACB263D4A2500FE0768 /* SaveDatas.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52442AC8263A9E6100FE0768 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52442A9E2633071600FE0768 /* TimetableCollectionViewCell.swift */,
+				52442A9F2633071600FE0768 /* CollectionViewCell.xib */,
+				52442ADA264F490600FE0768 /* ColorCollectionViewCell.swift */,
+				52442ADB264F490600FE0768 /* ColorCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52442AC9263A9E7800FE0768 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				522E383E2632C6E400D74243 /* DisplayTimetable.swift */,
+				52442AA32633E07900FE0768 /* SaveClassNameViewController.swift */,
+				52442AD626457B3900FE0768 /* ChoiceColorViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		52442AD02642470600FE0768 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				52442AD12642478900FE0768 /* DatasManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		52A4B771264FA6C7009E1280 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +193,7 @@
 			files = (
 				522E38472632C6E800D74243 /* LaunchScreen.storyboard in Resources */,
 				522E38442632C6E800D74243 /* Assets.xcassets in Resources */,
+				52442ADD264F490600FE0768 /* ColorCollectionViewCell.xib in Resources */,
 				52442AA12633071600FE0768 /* CollectionViewCell.xib in Resources */,
 				522E38422632C6E400D74243 /* Main.storyboard in Resources */,
 			);
@@ -144,10 +206,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52442ADC264F490600FE0768 /* ColorCollectionViewCell.swift in Sources */,
+				52442AD726457B3A00FE0768 /* ChoiceColorViewController.swift in Sources */,
 				522E383F2632C6E400D74243 /* DisplayTimetable.swift in Sources */,
+				52442AC42639473900FE0768 /* TextField + Extension.swift in Sources */,
 				522E383B2632C6E400D74243 /* AppDelegate.swift in Sources */,
-				52442AA02633071600FE0768 /* CollectionViewCell.swift in Sources */,
+				52442AA02633071600FE0768 /* TimetableCollectionViewCell.swift in Sources */,
+				52442AA42633E07900FE0768 /* SaveClassNameViewController.swift in Sources */,
+				52442AD22642478900FE0768 /* DatasManager.swift in Sources */,
 				522E383D2632C6E400D74243 /* SceneDelegate.swift in Sources */,
+				52442ACC263D4A2500FE0768 /* SaveDatas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="TimetableCollectionViewCell" customModule="TimetableApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="166"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lXo-ut-2sS">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="126"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drn-2o-ycR">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCW-qt-Rkt">
+                                <rect key="frame" x="0.0" y="42" width="130" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0C-yQ-DNj">
+                                <rect key="frame" x="0.0" y="84" width="130" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVp-CS-R72" customClass="Time">
+                        <rect key="frame" x="47.5" y="129" width="35" height="34"/>
+                        <state key="normal" title="color">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="chooseColorButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="87P-aS-vPT"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemGray4Color"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lXo-ut-2sS" secondAttribute="trailing" id="HvI-0m-u6f"/>
+                <constraint firstItem="lXo-ut-2sS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bf6-HE-U7d"/>
+                <constraint firstItem="PVp-CS-R72" firstAttribute="top" secondItem="lXo-ut-2sS" secondAttribute="bottom" constant="3" id="hJX-HM-KTh"/>
+                <constraint firstItem="PVp-CS-R72" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mNj-yJ-ije"/>
+                <constraint firstAttribute="bottom" secondItem="lXo-ut-2sS" secondAttribute="bottom" constant="40" id="uhw-nC-1Iq"/>
+                <constraint firstAttribute="bottom" secondItem="PVp-CS-R72" secondAttribute="bottom" constant="3" id="ujX-9G-2LW"/>
+                <constraint firstItem="lXo-ut-2sS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wkh-JW-2lI"/>
+            </constraints>
+            <size key="customSize" width="130" height="166"/>
+            <connections>
+                <outlet property="buttonDesign" destination="PVp-CS-R72" id="sXk-KV-I9n"/>
+                <outlet property="classNameLabel" destination="Drn-2o-ycR" id="KCY-df-h0d"/>
+                <outlet property="classRoomLabel" destination="bCW-qt-Rkt" id="PPK-BG-QFt"/>
+                <outlet property="facultyNameLabel" destination="K0C-yQ-DNj" id="Suc-fB-665"/>
+                <outlet property="stackView" destination="lXo-ut-2sS" id="oDE-Gf-e3F"/>
+            </connections>
+            <point key="canvasLocation" x="117" y="62"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
