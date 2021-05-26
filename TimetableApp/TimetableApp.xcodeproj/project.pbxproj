@@ -22,9 +22,11 @@
 		52442AD726457B3A00FE0768 /* ChoiceColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442AD626457B3900FE0768 /* ChoiceColorViewController.swift */; };
 		52442ADC264F490600FE0768 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52442ADA264F490600FE0768 /* ColorCollectionViewCell.swift */; };
 		52442ADD264F490600FE0768 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52442ADB264F490600FE0768 /* ColorCollectionViewCell.xib */; };
+		88EAC06C05ECEACCABA2871C /* Pods_TimetableApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9EB482F60982D1E3341C4F /* Pods_TimetableApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2ADF9C77E3DD94E6A56AA140 /* Pods-TimetableApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimetableApp.debug.xcconfig"; path = "Target Support Files/Pods-TimetableApp/Pods-TimetableApp.debug.xcconfig"; sourceTree = "<group>"; };
 		522E38372632C6E400D74243 /* TimetableApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimetableApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		522E383A2632C6E400D74243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		522E383C2632C6E400D74243 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		52442AD626457B3900FE0768 /* ChoiceColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceColorViewController.swift; sourceTree = "<group>"; };
 		52442ADA264F490600FE0768 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		52442ADB264F490600FE0768 /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
+		CD9EB482F60982D1E3341C4F /* Pods_TimetableApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimetableApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA3563B49106AC0D71AE8E9 /* Pods-TimetableApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimetableApp.release.xcconfig"; path = "Target Support Files/Pods-TimetableApp/Pods-TimetableApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EAC06C05ECEACCABA2871C /* Pods_TimetableApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,8 @@
 			children = (
 				522E38392632C6E400D74243 /* TimetableApp */,
 				522E38382632C6E400D74243 /* Products */,
+				6A09CC41CC9FE4ACC536AAC0 /* Pods */,
+				6882BD4BD154AA6C55CB2081 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +141,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6882BD4BD154AA6C55CB2081 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD9EB482F60982D1E3341C4F /* Pods_TimetableApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A09CC41CC9FE4ACC536AAC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF9C77E3DD94E6A56AA140 /* Pods-TimetableApp.debug.xcconfig */,
+				EBA3563B49106AC0D71AE8E9 /* Pods-TimetableApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 522E384B2632C6E800D74243 /* Build configuration list for PBXNativeTarget "TimetableApp" */;
 			buildPhases = (
+				C3FC5C8E346B66D682AF080A /* [CP] Check Pods Manifest.lock */,
 				522E38332632C6E400D74243 /* Sources */,
 				522E38342632C6E400D74243 /* Frameworks */,
 				522E38352632C6E400D74243 /* Resources */,
+				CC8502721C5CF88DDD9ADD22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +227,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3FC5C8E346B66D682AF080A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimetableApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC8502721C5CF88DDD9ADD22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimetableApp/Pods-TimetableApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimetableApp/Pods-TimetableApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimetableApp/Pods-TimetableApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		522E38332632C6E400D74243 /* Sources */ = {
@@ -359,6 +428,7 @@
 		};
 		522E384C2632C6E800D74243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ADF9C77E3DD94E6A56AA140 /* Pods-TimetableApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -378,6 +448,7 @@
 		};
 		522E384D2632C6E800D74243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA3563B49106AC0D71AE8E9 /* Pods-TimetableApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
